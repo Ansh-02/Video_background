@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Background</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <div class="video-background">
-      <video autoplay muted loop id="myVideo">
-        <source src="Introducing iPhone 15 _ WOW _ Apple.mp4" type="video/mp4" />
-      </video>
-      <div class="content">
-        <h1> its i phone 15</h1>
-       
-      </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container-fluid video-container">
+        <video id="background-video" class="w-100" loop muted autoplay>
+            <source src="Introducing iPhone 15 _ WOW _ Apple.mp4" type="video/mp4">
+            
+        </video>
+        <div class="overlay"></div>
+
+        <div class="controls">
+            <button id="playPauseBtn" class="btn btn-light">Play</button>
+            
+        </div>
+
+        <div class="content">
+            <h1>its i iPhone 15 </h1>
+          
+        </div>
     </div>
 
     
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
